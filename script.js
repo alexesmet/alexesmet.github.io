@@ -9,9 +9,9 @@ const update = () => {
     let now = new Date();
     let end = Date.parse("2022-08-"+search.get("end")+"T17:00:00")
     let diff = new Date(Math.max(end - now,0))
-    let c_days    = diff.getDate() - 1
-    let c_hours   = diff.getHours()
-    let c_minutes = diff.getMinutes()
+    let c_days    = diff.getUTCDate() - 1
+    let c_hours   = diff.getUTCHours()
+    let c_minutes = diff.getUTCMinutes()
     document.getElementById("c_days"   ).textContent  = c_days
     document.getElementById("c_hours"  ).textContent  = c_hours
     document.getElementById("c_minutes").textContent  = c_minutes
