@@ -1,0 +1,25 @@
+body {
+    font-family: monospace;
+    font-size: xxx-large;
+    text-align: center;
+    background-color: #121212;;
+    color:  #fff34e;
+}
+
+table {
+    margin: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+td {
+    height: 80px;
+    width:  80px;
+    padding: 10px;
+    border: 3px solid #fff34e;
+    vertical-align: bottom;
+}
+
+.vacation_day {
+    color: black;
+}
